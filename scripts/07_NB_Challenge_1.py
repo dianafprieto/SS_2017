@@ -54,7 +54,7 @@ streamline.SetComputeVorticity(True)
 
 # Pass the streamlines to the mapper
 streamlineMapper = vtk.vtkPolyDataMapper()
-streamlineMapper.SetLookupTable(lut)
+#streamlineMapper.SetLookupTable(lut)
 streamlineMapper.SetInputConnection(streamline.GetOutputPort())
 streamlineMapper.SetScalarVisibility(True)
 streamlineMapper.SetScalarModeToUsePointFieldData()
